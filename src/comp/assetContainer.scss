@@ -16,9 +16,10 @@
 
   width: 100%;
     max-width: 38.2rem;
+    min-width: 32.8rem;
     min-height: 3.2rem;
-    height: fit-content;
     padding: .8rem;
+    flex: 1;
 
   background: idx.$main;
     border-radius: .2rem;

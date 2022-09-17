@@ -1,0 +1,85 @@
+@use './normalize.css';
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/dm-sans-v11-latin-regular.woff2') format('woff2'),
+    url('../assets/fonts/dm-sans-v11-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/dm-sans-v11-latin-500.woff2') format('woff2'),
+    url('../assets/fonts/dm-sans-v11-latin-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/dm-sans-v11-latin-700.woff2') format('woff2'),
+    url('../assets/fonts/dm-sans-v11-latin-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Font-styles */
+  $font-stack: 'DM Sans',sans-serif;
+  $font-size: 62.5%;
+
+/*color pallete*/
+$main: #5e57fb;
+$secondary: #3e2caf;
+$highlights: #4d42e2;
+$x: #100d36;
+$just-white: #ffffff;
+
+
+//general styles
+html {
+  font-size: $font-size;
+}
+
+body {
+  display: grid;
+    place-content: center;
+
+  font-family: $font-stack;
+    font-size: 1.6rem;
+    color: $just-white;
+
+  background: $secondary;
+}
+
+h1 {
+  font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+@media (pointer: fine) {
+
+  ::-webkit-scrollbar {
+    height: 1rem;
+    width: 1.2rem;
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $main;
+    border-radius: 1.2rem;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+}
